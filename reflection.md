@@ -2,11 +2,15 @@
 
 Answer each question in 3 to 5 sentences. Be specific and honest about what actually happened while you worked. This is about your process, not trying to sound perfect.
 
+Name: Rayed Jawad
+
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
+
+    The visual UI and look of the game looked good without any bugs but once you started playing, thats when you would immediately notice the many bugs in the program. The game would say a number is higher when in reality the number was lower and vice versa. The "New Game" button also doesnt work it only works to restart if you refresh the entire page which is inefficient. The difficulties of the game is also bugged as the hardest difficulty is guessing numbers from 1 - 50 while the normal difficulty is guessing numbers from 1 - 100 which doesnt make any sense in terms of difficulty. Normal also has 7 attempts while easy difficulty only has 5.
 
 ---
 
@@ -15,6 +19,8 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+
+  I utilized Anthropic's Claude Code for this project. AI helped me correctly identify the type switching bug in check_guess. This was where when even-numbered attempts converted the secret number to a string before comparison. I correctly verified this by reading the original code and confirming in lines 158-161. Then I played the game manually to fully confirm if the hints were functional and factual.
 
 ---
 
