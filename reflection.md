@@ -31,6 +31,8 @@ Name: Rayed Jawad
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
+  I play tested the game thoroughly with a specific bug in mine and tested specifically that feature multiple times to make sure they are working properly with various different kinds of attempts. I ran the test after refactoring logic_utils.py and all three of those tests failed. The AI helped me by suggesting writing three new tests that sprcifically targetted the difficulty range bug. It showed me how to write a test that locks in a specific fixed value so the same bug can never silently come back. 
+
 ---
 
 ## 4. What did you learn about Streamlit and state?
@@ -38,6 +40,8 @@ Name: Rayed Jawad
 - In your own words, explain why the secret number kept changing in the original app.
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 - What change did you make that finally gave the game a stable secret number?
+
+  Basically the secret number kept changing because everytime you clicked the submit button, the streamlit reran the enmtire python script all over again from top to bottom. The code "random.randint()" was outside of any session state check which is why it generated a brand new number on every rerun. 
 
 ---
 
@@ -47,3 +51,5 @@ Name: Rayed Jawad
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+  One habit I will continue to reuse is to always run the existing tests before and after making changes. The test caught the broken starter tests immediately and saved me from committing code that looked fine but was actually wrong. But next time, I definetly would run and be sure to verify every AI generated test right away instead of assuming that they work. Since this project had styarter tests with a bug in them from the start. I used to think the correctness of AI generated code was easy to spot. This project showed to me that bugs can be very subtle and even hidden in logic that looks completely normal at a first glance. So I will always test AI code before fully trusting it. 

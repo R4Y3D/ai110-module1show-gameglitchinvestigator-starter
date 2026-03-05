@@ -25,13 +25,25 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] **Game's purpose:** A number guessing game where you try to guess a secret number within a set number of attempts. Hints tell you if your guess is too high or too low.
+
+- [x] **Bugs found:**
+  - Hints were backwards (Too High / Too Low were wrong)
+  - New Game button didn't actually restart the game
+  - Hard mode had a smaller range than Normal (1–50 vs 1–100)
+  - Easy had fewer attempts than Normal
+
+- [x] **Fixes applied:**
+  - Fixed the hint logic so comparisons are always numeric
+  - Fixed New Game to reset all session state
+  - Corrected difficulty ranges and attempt limits
+  - Moved game logic into `logic_utils.py`
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [![Game Glitch Investigator](image.png) ] 
+- [![Win screen](image-1.png)]
+[Insert a screenshot of your fixed, winning game here]
 
 ## 🚀 Stretch Features
 
